@@ -1,0 +1,320 @@
+*{
+padding:0px;
+margin:0px;
+
+}
+#header
+{
+	background-image:url("images/boxer.jpg");
+	/*used to specify the kind of attachment of the background image with respect to its container.
+	It can be set to scroll or remain fixed. It can be applied to all HTML elements.*/
+		background-attachment:fixed;
+	/*property is used to specify the size of background images. The background image can be set to cover the element's entire
+	background area or have definite dimensions defined by the CSS author.*/
+	background-size:cover;
+  height:80vh;
+	background-repeat: no-repeat;
+	/*An element with position: fixed--> is positioned relative to the viewport, which means it always stays in the same place even if
+	the page is scrolled. The top, right, bottom, and left properties are used to position the element.*/
+	/*استخدمن السطرين دول علشان الشريط بتاع المنيو يثبت لما اجي اعمل تقليب في لصفحة*/
+  background-position:center;
+}
+.navbar-nav li a
+{
+	/*The float property is used for positioning and formatting content */
+	float: right;/*left - The element floats to the left of its container*/
+	/*Only use !important on page-specific CSS--> -that overrides foreign CSS (from external libraries, like Bootstrap or normalize.css).
+	-dd another CSS rule with !important, and either give the selector a higher specificity
+	(adding a tag, id or class to the selector), or add a CSS rule with the same selector at a later point than the existing one.
+	 This works because in a specificity tie, the last rule defined wins.*/
+ /*هنجد ان الخط قبل كده متعرف كلون اسود في بوت استرب ولكن هنا لما حطيب كلمة مهم في اخر اللون غير اللون لابيض*/
+	color:#FFF!important;
+
+}
+/** error here want to edit logo**/
+
+.navbar-brand img{
+/*position:fixed;
+ top:0;
+	left:0;*/
+width:150px;
+height:100px;
+margin-left: 30px;
+}
+
+.navbar-toggler
+{
+/*	margin-top: 10px;*/
+	border: none!important;
+	/*outline -->is a line that is drawn around elements, outside the borders, to make the element "stand out".*/
+	outline: none!important;
+}
+/***********  right meun ***********************/
+nav .fa-bars
+{
+	color:#fff!important;
+	font-size: 26px;
+}
+
+
+/******************************welcome text*****************/
+.welcome
+{
+	padding:50px 100px;
+	margin-top: -140px;
+	background-color: #ffffff;
+	box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
+}
+.welcome h1
+{
+	color:#333;
+}
+.welcome .home-btn{
+	margin-top: 10px;
+	padding: 10px 30px;
+	border-radius: 30px;
+	color:#fff;
+	background-color: #013f7e;
+
+}
+.welcome .btn:focus{
+	box-shadow:none;
+}
+.welcome .btn:hover
+{
+	color:#fff;
+}
+/**********************about us********************/
+#about{
+padding-top: 100px;
+padding-bottom: 100px;
+}
+#about .col-md-6
+{
+	/* padding_top padding_right padding_bottom padding_left */
+	padding:20px 10px; /*top&bottom=20 right&left=10*/
+}
+#about h3
+{
+	margin:20px auto;
+
+}
+/************************* services***************************/
+#services{
+	background-color: #efefef;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+#services col-md-4{
+	padding:40px;
+
+}
+#services col-md-4 h4{
+	padding:5px;
+
+}
+#services col-md-4 img{
+width:50px;
+
+}
+#services col-md-4 p{
+	padding:5px;
+	text-align: justify;
+
+}
+/***************************** features ***************************/
+#features{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	/* linear-gradient(direction, color-stop1, color-stop2, ...) , Linear Gradient - Top to Bottom (this is default)*/
+	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("images/features-background.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color:#ffffff;
+
+}
+.feature-box
+{
+	height:120px;
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+.feature-box .feature-left
+{
+	height:120px;
+	width:20%;
+	float:left;
+}
+.feature-box .feature-left .fa
+{
+padding-top: 13px;
+font-size: 50px;
+}
+.feature-box .feature-right
+{
+	height:120px;
+	width:80%;
+	float:left;
+}
+.feature-box .feature-right h4
+{
+padding-top: 10px;
+padding-left: 15px;
+text-align: left;
+}
+.feature-box .feature-right p
+{
+
+padding-left: 15px;
+text-align: left;
+
+}
+/************************************* testimonilas *************************************/
+#testimonilas
+{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#testimonilas .col-md-4
+{
+	padding: 10px 30px;
+}
+#testimonilas img
+{
+	width:60px;
+	height:60px;
+	border-radius: 50%;
+	/*a negative margin on the top/left: it pulls the element in that specified direction.(Moves the element 10px outside of the left)*/
+	margin-left: -30px;
+	/* Moves the element 40px upwards */
+	margin-top: -40px;
+	margin-bottom: 30px;
+	border:5px solid #ffffff;
+
+}
+.review
+{
+	font-size: 16px;
+	padding:10px 10px 10px 30px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+}
+.review .fa-twitter
+{
+	color:#013f7e;
+}
+#testimonilas span{
+		color:#013f7e;
+		font-weight: 600; /* 600 : Semi Bold (Demi Bold)*/
+		font-size: 18px;
+}
+#testimonilas h1
+{
+		color:#013f7e;
+		margin-bottom: 20px;
+}
+#testimonilas p
+{
+	padding-bottom: 20px;
+}
+#testimonilas .middle
+{
+	margin-bottom: -30px;
+	margin-top: -30px;
+}
+/*********************************** subsribe *************************************/
+.subscribe{
+	padding: 50px 20px;
+	background-color: #013f7e;
+	position: relative;
+	box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.2);
+	margin-bottom: -160px;
+}
+.subscribe h3 ,.subscribe p
+{
+	color:#ffffff;
+}
+.subscribe .input-group
+{
+	border-radius: 30px;
+	background: #ffffff;
+	max-width: 500px;
+	margin: 10px auto;
+	padding:5px;
+
+}
+.subscribe .form-control
+{
+	border: none;
+	background: transparent;
+}
+.subscribe .form-control:focus
+{
+	border: none;
+	background: transparent;
+}
+.subscribe .input-group-append
+{
+background-image: linear-gradient(to right,#1c03b5, #5c8bef);
+border-radius: 30px;
+}
+.subscribe .input-group-text{
+	background: transparent;
+	border:none;
+	color:#ffffff;
+}
+.subscribe .btn:focus{
+	box-shadow: none;
+}
+.subscribe .btn:hover{
+color: #ffffff;
+}
+/************************* footer *************************/
+#footer
+{
+	margin-top:80px;
+	padding:100px;
+	background-color: #efefef;
+	color:#013f7e;
+}
+.footer-logo
+{
+	width:100px;
+
+	margin-top: 25px;
+	/*margin-bottom: 15px;*/
+}
+#footer h1
+{
+	font-size:15px;
+	text-align:left;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+#footer p{
+	font-size:12px;
+	text-align: left;
+}
+#footer .city{
+	margin-left: 37px;
+}
+#footer .row .fa{
+	padding-right: 20px;
+	font-size:15px;
+}
+#footer hr
+{
+	margin-top: 10px;
+}
+#footer .fa-heart-o
+{
+	color:red;
+	font-size: 17px;
+}
+#footer .copyright
+{
+	margin-bottom: -80px;
+	text-align: center;
+	font-size: 15px;
+}

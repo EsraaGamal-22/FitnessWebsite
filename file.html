@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+	<html lang="en">
+   <head>
+     <title>fitness Website</title>
+     <link rel="stylesheet" href="style.css">
+     <!-- to using bootstrap in my website--> <!--Bootstrap is responsive by default.-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+			           <!-- using Font Awesome Icons --------------------------->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			        <!-- for animation ---------------------------------------------->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  </head>
+  <body>
+    <!--header--------------------------------------------------------->
+    <section id="header">
+      <!--copy this code from documantation for bootstrap---->
+      <nav class="navbar  navbar-light  ">
+        <a class="navbar-brand" href="#"><img  src="images/logo1.png"  alt="logoimgage"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!--span class="navbar-toggler-icon"></span-->
+          <i class="fa fa-bars" ></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="#welcome">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonilas">REVIEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+		<!-----------------------------welcome text--------------------------------->
+		<section id="welcome">
+			<div class="container"> <!--use bootstrap class: container-->
+				<!-- wow fadeInUp :show from bottom to up -->
+				<div class="welcome text-center wow fadeInUp"> <!-- use bootstrap class: textcenter-->
+					<h1>welcome</h1>
+					<p>follow us and will get more results in your body,
+						Playing sports or exercises contributes to mental health,
+						helping to prevent depression and increase self-esteem and body image, according to Sport and Development.org.
+						 ... Playing sports is a key strategy for reducing stress, because your body releases feel-good endorphins while exercising.</p>
+					<!--using one more class with button , btn: in bootstrap -->
+					<button type="submit" class="btn home-btn">subscribe</button>
+				</div>
+
+			</div>
+		</section>
+		<!-------------------------about us---------------------->
+		<section id="about">
+			<div class="container">
+				<div class="row"> <!-- inside this row : several columns called col-md-6-->
+					<div class="col-md-6 text-center wow fadeInLeft">
+						<!--img-fluid in bootstrap: max-width: 100%; and height: auto; are applied to the image so that it scales with the parent element.-->
+						<img  src="images/sport-2245029_1920.jpg"  class="img-fluid"  alt="runimage">
+          </div>
+					<!-- textjustify in bootstrap: Indicates justified text-->
+					<div class="col-md-6 text-justify  wow fadeInRight">
+						<h3>How to Get Started</h3>
+						<p>Before you start working out, get a health check-up and make a plan with realistic goals.
+							Then, make exercise a habit by incorporating it into your daily routine.</p>
+						<p>Exercise can improve mental function, reduce your risk of chronic disease and help you lose weight.</p>
+					</div>
+					<div class="col-md-6 text-justify  wow fadeInLeft">
+						<h3>Common Types of Exercise</h3>
+						<p>Common types of exercise include Cardio ,Strength training, HIIT,
+							flexibility and stability. You can do them individually or combined.</p>
+						<p>The minimum recommendation for exercise is at least 150 minutes per week. However,
+								it is important to start slowly and let your body rest from time to time.</p>
+					</div>
+					<div class="col-md-6 text-justify  wow fadeInRight">
+						<div class="embed-responsive embed-responsive-16by9"> <!--to add youtube video-->
+							<iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/GS_z6FG_jqE"
+							frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+
+			</div>
+	  </section>
+		<!------------------------services--------------------------->
+		<section id="services">
+			<div class="container">
+				<div class="row wow fadeInUp">
+					<!--col-md-4: This class is used when the device size is medium or greater than 768px
+					and the maximum width of container is 720px and you want the width equal to 4 columns -->
+					<div class="col-md-4">
+						<img src="images/mixed-martial-arts.png" alt="serviceimage" class="wow fadeInRight delay-1s">
+						<h4 class="wow fadeInRight delay-2s">Mixed Martial Art</h4>
+						<p>The explosive power of boxing and kick-boxing combined with the enduring strength
+							needed for grappling make MMA training a great choice for improving your functional strength. </p>
+					</div>
+					<div class="col-md-4">
+						<img src="images/gym.png" alt="serviceimage" class="wow fadeInRight delay-1s">
+						<h4 class="wow fadeInRight delay-2s">Gym</h4>
+						<p>Going to the gym every day can help improve your cardiovascular system, strengthen your muscles, help you maintain your weight, </p>
+					</div>
+					<div class="col-md-4">
+						<img src="images/boxing.png" alt="serviceimage" class="wow fadeInRight delay-1s">
+						<h4 class="wow fadeInRight delay-2s">Boxing</h4>
+						<p> Boxing as a fitness activity enables the average person to hone those same athletic skills, all without having to take a punch.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-----------------------features--------------------------->
+    <section id="features">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft">
+						<img src="images/features.png" class="img-fluid" alt="featureimg">
+					</div>
+					<div class="col-md-6 wow fadeInDown">
+					  <div class="feature-box">
+							<div class="feature-left">
+								<!-- shape of cup icon-->
+							<i class="fa fa-trophy"></i>
+							</div>
+							<div class="feature-right">
+								<h4>Certified Trainers</h4>
+								<p>A good personal trainer believes that every client has the capacity
+									and the potential to succeed. They will get you excited to train, energize your workouts,
+									 and show you how to get where you want to go</p>
+							</div>
+						</div>
+						<div class="feature-box">
+							<div class="feature-left">
+								<!-- shape of cup icon-->
+							<i class="fa fa-heartbeat"></i>
+							</div>
+							<div class="feature-right">
+								<h4>Free consultation</h4>
+								<p> fitness specialist or personal trainer. This expert will help you develop a regular
+									fitness routine and define your goals. Some common fitness goals include improving: strength</p>
+							</div>
+						</div>
+						<div class="feature-box">
+							<div class="feature-left">
+								<!-- shape of cup icon-->
+							<i class="fa fa-clock-o"></i>
+							</div>
+							<div class="feature-right">
+								<h4>Flexible Time</h4>
+								<p>Flexibility is an important component of physical fitness and has many positive effects on the body. For instance, it improves mobility,
+									posture, muscle coordination, reduces the risk of injuries and muscle soreness. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+                             <!-- testimonilas--------------------------------------------->
+    <section id="testimonilas">
+				<div class="container">
+					<h1 class="text-center">Meet Our Users </h1>
+					<p class="text-center">For some of us it is about packing on muscle to improve strength, <br>
+						while others are more motivated by the boost of energy they'll feel when they get into better shape. Weight loss, endurance, flexibility </p>
+					<div class="row">
+								<!-- wow fadeInLeft delay-1s :show from left with delay 1 second-->
+						<div class="col-md-4 wow fadeInLeft delay-1s">
+							<p class="review">Exercise is supposed to be good for you — but exercising too much or
+								running too fast can have serious consequences for your body and brain.<br>	<i class="fa fa-twitter"></i><span>@username</span></p>
+								<img src="images/user1.jpg" alt="userimg">
+						</div>
+						<div class="col-md-4 middle wow fadeInUp ">
+							<p class="review">EveryTime I go workout at Fitness Club I’m greeted with a smile, offered help in my workouts,
+								which included all fitness related materials to get the job done. <br>	<i class="fa fa-twitter"></i><span>@username</span></p>
+								<img src="images/user2.jpg" alt="userimg">
+						</div>
+						<div class="col-md-4  wow fadeInRight delay-1s">
+							<p class="review">From the first day I started my membership at Fitness Club
+								I was accepted warmly and was treated like I had been a member for decades.<br>	<i class="fa fa-twitter"></i><span>@username</span></p>
+								<img src="images/user3.jpg" alt="userimg">
+						</div>
+					</div>
+				</div>
+
+		</section>
+		<!-- subscribe --------------------------------------------------------------------------->
+		<section id="subscribe">
+			<div class="container">
+				<!-- wow fadeInUp delay-1s :show from bottom to up with delay 1 second-->
+				<div class="subscribe text-center wow fadeInUp delay-1s">
+					<h3> Join for free trial Now! </h3>
+					<p> join us for any duration will get one month free</p>
+					<div class="input-group">
+						<input type="email" class="form-control" placeholder="Email.id">
+						<div class="input-group-append">
+							<button type="submit" class="input-group-text btn">Join</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<!-- footer secttion -------------------------------------------->
+<section id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="images/logo2.png" alt="imglogo" class="footer-logo">
+				<p>It's clear, but we'll mention it anyway – going to the gym is good for your health and fitness!
+					 ... Studies show that regular exercise and an increase in strength and cardio fitness levels
+					can help reduce the risk of health concerns and diseases, including: Heart disease</p>
+			</div>
+			<div class="col-md-3">
+				<h1>Features</h1>
+				<p>Certified Trainers</p>
+				<p>Free Consultion</p>
+				<p>Flexible Time</p>
+				<p>30 Days Free Trial</p>
+	  	</div>
+			<div class="col-md-3">
+				<h1>Quick Contact</h1>
+				<p><i class="fa fa-phone-square"></i> +1 01234566789</p>
+				<p><i class="fa fa-envelope"></i> contact@website.com</p>
+        <p><i class="fa fa-home"></i> xyz Road, xyz complex</p>
+				<p class="city">City, Country</p>
+
+			</div>
+			<div class="col-md-3">
+				<h1>Follow Us On </h1>
+				<p><i class="fa fa-facebook-official"></i> Facebook</p>
+				<p><i class="fa fa-youtube-play"></i> Youtube</p>
+				<p><i class="fa fa-linkedin"></i>Linkedin</p>
+				<p><i class="fa fa-twitter"></i> Twitter</p>
+     </div>
+	 </div> <hr> <!--The <hr> element is: used to separate content (or define a change) in an HTML page.-->
+	 <p class="copyright">Made With <i class="fa fa-heart-o"></i>by Esraa Gamal</p>
+	</div>
+</section>
+               <!-- smooth scroll js ----------------->
+<script src="js/smooh-scroll.js"></script>
+<script>
+   var scroll =new SmoothScroll('a[href*="#"]');
+</script>
+        <!--- animation --------------------------------->
+				<script src="js/wow.min.js"></script>
+				<script>new WOW().init();</script>
+  </body>
+
+</html>
